@@ -1,6 +1,6 @@
 function Partners() {
 
-return Page();
+    return Page();
 }
 
 
@@ -36,7 +36,7 @@ function Card(nome){
             padding: "2px",
             borderRadius: "8px",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"}}>
-            <h2>{JSON.stringify(nome.nome)}</h2>
+            <h2>{(nome.nome)}</h2>
         </div>
 }
 
