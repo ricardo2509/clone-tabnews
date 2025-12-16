@@ -32,7 +32,7 @@ function Card(item){
 
     return <div style={{ margin: "10px", color: "darkblue", 
             width: item.width, 
-            textAlign: item.align || "left",
+            textAlign: "center" || "left",
             fontFamily: "Arial, sans-serif",
             fontSize: "14px",
             backgroundColor: "#f0f8ff",
