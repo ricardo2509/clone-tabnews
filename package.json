@@ -2,14 +2,23 @@
     "name": "clone-tabnews",
     "version": "1.0.0",
     "description": "Projeto laboratório de desenvolvimento baseado no tabnews.com.br",
+    "homepage": "https://github.com/ricardo2509/clone-tabnews#readme",
+    "bugs": {
+        "url": "https://github.com/ricardo2509/clone-tabnews/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ricardo2509/clone-tabnews.git"
+    },
+    "license": "MIT",
+    "author": "",
+    "type": "module",
     "main": "index.js",
     "scripts": {
         "dev": "next dev",
         "lint:check": "prettier --check .",
         "lint:fix": "prettier --write ."
     },
-    "author": "",
-    "license": "MIT",
     "dependencies": {
         "next": "^13.1.6",
         "react": "^18.2.0",
