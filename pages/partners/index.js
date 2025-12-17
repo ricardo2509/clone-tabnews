@@ -1,16 +1,19 @@
+import Footer from '../commom/footer';
+import Navigation from '../commom/Navigation';
+import s from "/pages/styles.module.css";
+
 function Partners() {
 
     return Page();
 }
 
-
 function Page() {
     return <div>
-         <img src={`/images/logo_small.png`} width="60" alt="image not found" />
-        <br />
-        <h1 style={{fontFamily: "Arial", color: "darkblue"}}>Our Partners</h1>
-        <br />
+        <Navigation />
+        <div className={s.mainContent}>
         <Cards />
+        </div>
+        <Footer />
        </div>
 }
         

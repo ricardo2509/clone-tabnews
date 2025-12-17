@@ -1,30 +1,16 @@
+import Home from './home';
+import Navigation from './commom/Navigation';
+import Footer from './commom/footer';
+import s from "/pages/styles.module.css";
 
-function Home() {
-    return <div align="center" style={{fontFamily: "Arial", color: "black"}}>
-        <img src={`/images/logo_small.png`} width="60" alt="image not found" />
-        <br />
-        <h1>RMS Monitoring</h1><h2>We at RMS Monitoring are looking for app developers</h2>
-        <LinkPartners />
-        <br />
-        <h2 style={{width: "75%"}}>Our focus is on monitoring post-COVID patients, with an emphasis on tracking clinical signs to help us direct physioterapy professionals for home care</h2>
+function Index() {
 
-        <br />
-        <br />
-        <div>
-            <h2>Also check our</h2><LinkMissionVisionValues />
-         </div>
-    </div>;
+    return <div className={s.pageContainer}>            
+                <Navigation />
+                <div>
+                    <Home />
+                </div>
+                <Footer />
+            </div>;
 }
-
-function LinkPartners() {
-  return (<a style={{fontFamily: "Arial", color: "darkblue", fontSize: "18px"}}
-    href="/partners" >Check our Partners</a>);
-}
-
-
-function LinkMissionVisionValues() {
-  return (<a style={{fontFamily: "Arial", color: "darkblue", fontSize: "18px"}}
-    href="/MissionVisionValues" >Mission, Vision and Values</a>);
-}
-
-export default Home;
+export default Index;

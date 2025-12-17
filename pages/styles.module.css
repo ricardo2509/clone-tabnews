@@ -1,0 +1,123 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes at least the full height of the viewport */
+  align-content: center;
+  justify-content: space-between;
+}
+
+.mainContent {
+    flex-grow: 1; /* This makes the content area expand to fill all available space */
+    position: relative;
+    min-height: 73vh;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+     font-family: "Arial";
+     color: black;
+}
+
+.divCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pageheader1{
+    color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     background-color: #f0f8ff
+}
+
+.pageheader2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-size: 18px;
+    display: flex;
+    align-items: center
+}
+
+.pagefooter1 {
+    margin-top: auto;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    background-color:#f0f8ff;
+    justify-content: space-between;
+    align-items:center;
+    color:white;
+    position: relative;
+    min-height: 10vh;
+}
+
+.pagefooter2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue;
+    font-size: 18px;
+    padding: 8px;
+    align-content: center;
+}
+
+.aCustom {
+    margin: 10px;
+    text-decoration: none;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;    
+}
+
+.fontFormatMenu {
+    font-family: Arial; 
+    color: darkblue; 
+    font-size: 18px
+}
+
+.card{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    flex-direction: column;
+    color: darkblue; 
+    align-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cardTitle{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    flex-direction: column;
+    color: darkblue; 
+    align-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #b9d5ec;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hErrorMessage {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 30px;
+    align-content: center;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 80%;
+    background-color: brown;
+    border-radius: 8px;
+    display: block;
+}   
