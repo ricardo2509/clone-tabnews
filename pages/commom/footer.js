@@ -4,7 +4,7 @@ function Footer(){
 
     return <div className={s.pagefooter1}>
         <div className={s.pagefooter2}>
-            <a className={s.aCustom} href="/faq">FAQ</a>
+            <a className={s.aCustom} href="/commom/inProgress">FAQ</a>
             <a className={s.aCustom} href="/MissionVisionValues">About Us</a>
         </div>
         <div>

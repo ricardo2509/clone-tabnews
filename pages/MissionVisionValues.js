@@ -42,7 +42,7 @@ function Cards({ dataTitle, dataText }) {
                     })}
                 </>
             ) : (
-                <h2 className={s.hErrorMessage}>No data available</h2>
+                <h2 className={`${s.hMessage} ${s.hErrorMessage} ${s.centerDiv}`}>No data available</h2>
             )}
         </div>
     );

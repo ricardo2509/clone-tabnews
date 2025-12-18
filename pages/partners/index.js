@@ -3,12 +3,7 @@ import Navigation from '../commom/Navigation';
 import s from "/pages/styles.module.css";
 
 function Partners() {
-
-    return Page();
-}
-
-function Page() {
-    return <div>
+    return <div className={s.pageContainer}>
         <Navigation />
         <div className={s.mainContent}>
         <Cards />
@@ -31,14 +26,7 @@ function Cards() {
 
 function Card(nome){
 
-    return <div style={{ margin: "10px", color: "darkblue", 
-            width: "400px", textAlign: "left",
-            fontFamily: "Arial, sans-serif",
-            fontSize: "14px",
-            backgroundColor: "#f0f8ff",
-            padding: "2px",
-            borderRadius: "8px",
-            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)"}}>
+    return <div className={s.cardPartner}>
             <h2>{(nome.nome)}</h2>
         </div>
 }

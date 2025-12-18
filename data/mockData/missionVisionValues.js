@@ -3,17 +3,17 @@ export const mockDataTitle = [
         {
             "id":1,
             "title": "Mission",
-            "width": "20%"
+            "width": "30%"
         },
         {
             "id":2,
             "title": "Vision",
-            "width": "22%"
+            "width": "25%"
         },
         {
             "id":3,
             "title": "Values",
-            "width": "25%"
+            "width": "27%"
         }
     ];
 

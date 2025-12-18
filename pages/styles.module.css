@@ -1,9 +1,10 @@
 .pageContainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Takes at least the full height of the viewport */
-  align-content: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Takes at least the full height of the viewport */
+    align-content: center;
+    justify-content: space-between;
+    background-color: #dbeaf7;
 }
 
 .mainContent {
@@ -13,9 +14,9 @@
     align-content: center;
     display: flex;
     flex-direction: column;
-     text-align: center;
-     font-family: "Arial";
-     color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
 }
 
 .divCenter{
@@ -108,16 +109,48 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.hErrorMessage {
+.hMessage {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    height: 30px;
+    height: auto;
     align-content: center;
     font-weight: bold;
     margin-top: 30px;
     width: 80%;
     background-color: brown;
     border-radius: 8px;
-    display: block;
-}   
+}
+
+.hErrorMessage {
+    background-color: brown;
+}    
+.hWarningMessage {
+    background-color: rgb(214, 145, 16);
+}
+
+.centerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+.cardPartner{
+        margin: 10px;
+        color: darkblue; 
+        width: 70%; 
+        text-align: left;
+        min-width: 200px;
+        margin-right: 0 !important;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin-left: 0 !important;
+        background-color: #f0f8ff;
+        padding: 2px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}

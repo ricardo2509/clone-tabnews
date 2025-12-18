@@ -9,8 +9,8 @@ function Navigation(){
         </div>
         <div className={s.fontFormatMenu}>
             <a href="/partners" style={{margin: "10px"}}>Partners</a>
-            <a href="/login/register" style={{margin: "10px"}}>Register</a>
-            <a href="/login" style={{margin: "10px"}}>Login</a>
+            <a href="/commom/inProgress" style={{margin: "10px"}}>Register</a>
+            <a href="/commom/inProgress" style={{margin: "10px"}}>Login</a>
         </div>
     </div>;
 }
