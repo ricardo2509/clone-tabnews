@@ -12,10 +12,10 @@ function MissionVisionValues() {
     return <div>
         <Navigation />
         <div className={s.mainContent}>
-        <Cards dataTitle={dataTitle} dataText={dataText} />
+            <Cards dataTitle={dataTitle} dataText={dataText} />
         </div>
         <Footer />
-        </div>
+    </div>
 }
 
 function Cards({ dataTitle, dataText }) {
@@ -50,14 +50,14 @@ function Cards({ dataTitle, dataText }) {
 
 
 function Card({ item }) {
-    return <div className={item.title!=undefined ? s.cardTitle : s.card} style={{ width: item.width }}>
-            {item.title != undefined ? (
-                <h1>{(item.title)}</h1> )
-            :   (
-                <h2>{(item.text)}</h2> 
-                )
-            }
-        </div>
+    return <div className={item.title != undefined ? `${s.cardTitle} ${s.card}` : `${s.card}`} style={{ width: item.width }}>
+        {item.title != undefined ? (
+            <h1>{(item.title)}</h1>)
+            : (
+                <h2>{(item.text)}</h2>
+            )
+        }
+    </div>
 }
 
 export default MissionVisionValues;
