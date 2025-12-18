@@ -1,14 +1,16 @@
 .pageContainer {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Takes at least the full height of the viewport */
+    min-height: 100vh;
+    /* Takes at least the full height of the viewport */
     align-content: center;
     justify-content: space-between;
     background-color: #dbeaf7;
 }
 
 .mainContent {
-    flex-grow: 1; /* This makes the content area expand to fill all available space */
+    flex-grow: 1;
+    /* This makes the content area expand to fill all available space */
     position: relative;
     min-height: 73vh;
     align-content: center;
@@ -19,23 +21,23 @@
     color: black;
 }
 
-.divCenter{
+.divCenter {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.pageheader1{
+.pageheader1 {
     color: yellowgreen;
     display: flex;
     justify-content: space-between;
-     align-items: center;
-     padding: 10px;
-     background-color: #f0f8ff
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f8ff
 }
 
-.pageheader2{
+.pageheader2 {
     font-family: Arial, Helvetica, sans-serif;
     color: darkblue;
     font-size: 18px;
@@ -45,20 +47,20 @@
 
 .pagefooter1 {
     margin-top: auto;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color:#f0f8ff;
+    background-color: #f0f8ff;
     justify-content: space-between;
-    align-items:center;
-    color:white;
+    align-items: center;
+    color: white;
     position: relative;
     min-height: 10vh;
 }
 
 .pagefooter2 {
     font-family: Arial, Helvetica, sans-serif;
-    color:darkblue;
+    color: darkblue;
     font-size: 18px;
     padding: 8px;
     align-content: center;
@@ -69,22 +71,22 @@
     text-decoration: none;
     color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;    
+    font-size: 16px;
 }
 
 .fontFormatMenu {
-    font-family: Arial; 
-    color: darkblue; 
+    font-family: Arial;
+    color: darkblue;
     font-size: 18px
 }
 
-.card{
+.card {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
     flex-direction: column;
-    color: darkblue; 
+    color: darkblue;
     align-content: center;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -94,37 +96,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.cardPartner{
-        margin: 10px;
-        color: darkblue; 
-        width: 70%; 
-        text-align: left;
-        min-width: 200px;
-        margin-right: 0 !important;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        margin-left: 0 !important;
-        background-color: #f0f8ff;
-        padding: 2px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+.cardTitle {
+    background-color: #b9d5ec;
 }
 
-.cardTitle{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    flex-direction: column;
-    color: darkblue; 
-    align-content: center;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    background-color: #b9d5ec;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.cardPartner {
+    margin: 2%;
+    margin-right: 0 !important;
+    margin-left: 2% !important;
+    width: 70%;
+    text-align: left;
+    min-width: 200px;
+    padding: 2px;
 }
 
 .hMessage {
@@ -142,12 +125,13 @@
 
 .hErrorMessage {
     background-color: brown;
-}    
+}
+
 .hWarningMessage {
     background-color: rgb(214, 145, 16);
 }
 
-.centerDiv{
+.centerDiv {
     display: flex;
     justify-content: center;
     align-items: center;
