@@ -100,6 +100,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
+    width: 80%;
     flex-direction: row;
     color: darkblue;
     align-content: center;
@@ -115,6 +116,14 @@
     background-color: #b9d5ec;
 }
 
+.cardImage{
+    margin: auto;
+    align-content: center;
+    size: 36px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
 .cardPartner {
     margin: 2%;
     margin-right: 0 !important;
@@ -123,12 +132,6 @@
     text-align: left;
     min-width: 200px;
     padding: 2px;
-}
-
-.cardImage{
-    margin: auto;
-    align-content: center;
-    size: 36px;
 }
 
 .hMessage {
@@ -160,4 +163,22 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
+}
+
+.w25 {
+    width: 25%;
+    margin: auto;
+}
+
+.w40 {
+   width: 40%;
+}
+.w75 {
+    width: 75%;
+    margin: auto;
+}
+
+.w100 {
+    width: 100%;
+    margin: auto;
 }

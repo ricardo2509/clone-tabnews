@@ -37,6 +37,7 @@ function Cards({ dataTitle, dataText }) {
                                         item={textItem}
                                     />
                                 ))}
+                                <br />
                             </div>
                         );
                     })}
@@ -50,24 +51,25 @@ function Cards({ dataTitle, dataText }) {
 
 
 function Card({ item }) {
+
     return <div className={item.title != undefined ? 
-            `${s.cardTitle} ${s.card}` 
-            : `${s.card}`} style={{ width: item.width }}>
+            `${s.cardTitle} ${s.card}  ${s.w40}` 
+            : `${s.card}`}>
         
-        <div style={{margin:"auto"}}>
-        {item.title != undefined ? (
-            <h1>{(item.title)}</h1>)
+        <div  className={item.image != undefined ?  `${s.w75}`: `${s.w100}`}>
+        {item.title != undefined ? (            
+        
+            <h1>{(item.title)}</h1>
+        
+        )
             : (
                 <h2 style={{width : "95%"}}>{(item.text)}</h2>
             )
         }
         </div>
 
-{/*            <div style={{ marginRight: "2%", alignContent: "center" }}> */}
-{/*}            </div>  */}
-
         {item.image != undefined ? 
-                <div className={`${s.cardImage} ${s.card}`}>
+                <div className={ item.title != undefined ? `${s.cardTitle} ${s.cardImage} ${s.card} ${s.w25}` : `${s.cardImage} ${s.card} ${s.w25}`}>
                     <img src={item.image} alt="Image" />
                 </div>
             : null
