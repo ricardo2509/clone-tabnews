@@ -59,6 +59,13 @@
     align-items: center
 }
 
+.roundedBox {
+    overflow: auto;
+    margin-top: -4px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .pagefooter1 {
     margin-top: auto;
     padding: 10px;

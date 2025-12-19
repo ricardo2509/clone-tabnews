@@ -4,7 +4,9 @@ function Navigation(){
 
     return <div className={s.pageheader1}>
         <div className={s.pageheader2}>
-            <img src={`/images/logo_small.png`} width="60" alt="image not found" />
+            <div className={s.roundedBox}>
+                <img style={{float: "right", position: "relative"}} src={`/images/logo_small.png`} width="60" alt="image not found" />
+            </div>
             <a href="/" style={{margin: "10px"}}>Home</a>
         </div>
         <div className={s.fontFormatMenu}>
