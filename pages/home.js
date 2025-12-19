@@ -1,21 +1,34 @@
 import s from "/pages/styles.module.css";
+import useDeviceDetect from '/components/useDeviceDetect';
 
 function Home() {
+    const isMobile = useDeviceDetect();
 
     return <div className={s.mainContent}>
         <br />
-        <h1>RMS Monitoring</h1>
-        <h2>We at RMS Monitoring are looking for app developers</h2>
+
+{/*}        <div>{isMobile ? <p>Versão Mobile</p> : <p>Versão Desktop</p>}</div> */}
+
+        <label className={s.fontTitleDefault}>RMS Monitoring</label>
+        <label className={s.fontTextDefault}>We at RMS Monitoring are looking for app developers</label>
         <LinkPartners />
         <br />
-        <h2 style={{margin: "auto", width:"75%"}}>
+        <br />
+        <br />
+
+        <label className={s.fontTextDefault}>
             Our focus is on monitoring post-COVID patients, with an emphasis 
-            on tracking clinical signs to help us direct physioterapy professionals for home care</h2>
+            on tracking clinical signs to help us direct physioterapy professionals for home care</label>
+        <br />
         <br />
         <br />
         <div>
-            <h2>Also check our</h2><LinkMissionVisionValues />
+            <label className={s.fontTextDefault}>Also check our</label>
+        </div>
+        <div>
+            <LinkMissionVisionValues />
          </div>
+
     </div>;
 }
 
