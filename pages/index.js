@@ -1,16 +1,9 @@
-import Home from './home';
-import Navigation from './commom/Navigation';
-import Footer from './commom/footer';
 import s from "/pages/styles.module.css";
 
 function Index() {
 
-    return <div className={s.pageContainer}>            
-                <Navigation />
-                <div>
-                    <Home />
-                </div>
-                <Footer />
-            </div>;
+    return <div>
+            <h1>Este é o clone do portal Tabnews</h1>
+        </div>;
 }
 export default Index;
