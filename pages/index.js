@@ -1,5 +1,3 @@
-import s from "/pages/styles.module.css";
-
 function Index() {
 
     return <div>
