@@ -70,7 +70,7 @@ function Card({ item }) {
 
         {item.image != undefined ? 
                 <div className={ item.title != undefined ? `${s.cardTitle} ${s.cardImage} ${s.card} ${s.w25}` : `${s.cardImage} ${s.card} ${s.w25}`}>
-                    <img src={item.image} alt="Image" />
+                    <img style={{width:"40px"}} src={item.image} alt="Image" />
                 </div>
             : null
         }

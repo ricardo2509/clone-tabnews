@@ -13,7 +13,7 @@ export const mockDataTitle = [
         {
             "id":3,
             "title": "Values",
-            "image": "/images/values01.png"
+            "image": "/images/values.png"
         }
     ];
 

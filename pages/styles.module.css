@@ -175,6 +175,7 @@
 .w25 {
     width: 25%;
     margin: auto;
+    display: block;
 }
 
 .w40 {
