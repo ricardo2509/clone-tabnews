@@ -8,7 +8,7 @@ async function query(qry) {
         user: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
-        ssl: process.env.NODE_ENV === "production" ? true : false,
+        ssl: true,
     });
 
     try {
@@ -16,7 +16,7 @@ async function query(qry) {
         const result = await client.query(qry);
         return result;
     } catch (error) {
-        console.error("Database query error:", error);
+        console.log("Database query error:", error);
         throw error;
     } finally {
         await client.end();
