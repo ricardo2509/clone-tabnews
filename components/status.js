@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import s from "/pages/style.module.css";
 
 const Status = () => {
-    const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
     const [dbVersion, setDbVersion] = useState("1");
@@ -12,9 +11,8 @@ const Status = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Replace with your actual API endpoint
                 const response = await fetch(
-                    "http://localhost:3000/api/v1/status",
+                    process.env.POSTGRES_HOST + "/api/v1/status",
                 );
 
                 setIsLoading(false);
