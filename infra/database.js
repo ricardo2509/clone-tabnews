@@ -1,4 +1,5 @@
 import { Client } from "pg";
+var fs = require("fs");
 
 async function query(qry) {
     const client = new Client({
@@ -7,12 +8,19 @@ async function query(qry) {
         user: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
+        ssl: process.env.NODE_ENV === "production" ? true : false,
     });
 
-    await client.connect();
-    const result = await client.query(qry);
-    await client.end();
-    return result;
+    try {
+        await client.connect();
+        const result = await client.query(qry);
+        return result;
+    } catch (error) {
+        console.error("Database query error:", error);
+        throw error;
+    } finally {
+        await client.end();
+    }
 }
 
 export default {
