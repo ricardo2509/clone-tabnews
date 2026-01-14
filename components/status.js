@@ -14,7 +14,7 @@ const Status = () => {
                 const host =
                     process.env.NODE_ENV === "development"
                         ? process.env.NEXT_PUBLIC_HOST
-                        : process.env.HOST_NAME;
+                        : "";
                 console.log(
                     "Fetching status data... ==>" +
                         process.env.NEXT_PUBLIC_HOST +
