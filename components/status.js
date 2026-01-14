@@ -12,11 +12,7 @@ const Status = () => {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    process.env.NODE_ENV === "development"
-                        ? "http://localhost:3000/api/v1/status"
-                        : "https://clone-tabnews-5em9.vercel.app/api/v1/status",
-                    /* "http://localhost:3000/api/v1/status", */
-                    /* https://clone-tabnews-5em9.vercel.app/api/v1/status */
+                    process.env.NEXT_PUBLIC_HOST + "/api/v1/status",
                 );
 
                 setIsLoading(false);
