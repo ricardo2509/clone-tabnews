@@ -11,13 +11,17 @@ const Status = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                const host =
+                    process.env.NODE_ENV === "development"
+                        ? process.env.NEXT_PUBLIC_HOST
+                        : process.env.HOST_NAME;
                 console.log(
                     "Fetching status data... ==>" +
-                        process.env.NEXT_PUBLIC_HOST,
+                        process.env.NEXT_PUBLIC_HOST +
+                        " --- " +
+                        process.env.HOST_NAME,
                 );
-                const response = await fetch(
-                    process.env.NEXT_PUBLIC_HOST + "/api/v1/status",
-                );
+                const response = await fetch(host + "/api/v1/status");
 
                 setIsLoading(false);
 
