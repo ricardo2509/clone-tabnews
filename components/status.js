@@ -11,6 +11,10 @@ const Status = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                console.log(
+                    "Fetching status data... ==>" +
+                        process.env.NEXT_PUBLIC_HOST,
+                );
                 const response = await fetch(
                     process.env.NEXT_PUBLIC_HOST + "/api/v1/status",
                 );
