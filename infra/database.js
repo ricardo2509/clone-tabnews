@@ -14,9 +14,9 @@ async function query(qry) {
     try {
         await client.connect();
         const result = await client.query(qry);
+
         return result;
     } catch (error) {
-        console.log("Database query error:", error);
         throw error;
     } finally {
         await client.end();

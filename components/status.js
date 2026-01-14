@@ -11,11 +11,10 @@ const Status = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                console.error("Database query error....: Porra q merda!!!");
                 const response = await fetch(
                     process.env.NODE_ENV === "development"
-                        ? process.env.APP_HOST_LOCAL + "/api/v1/status"
-                        : process.env.APP_HOST_PROD + "/api/v1/status",
+                        ? "http://localhost:3000/api/v1/status"
+                        : "https://clone-tabnews-5em9.vercel.app/api/v1/status",
                     /* "http://localhost:3000/api/v1/status", */
                     /* https://clone-tabnews-5em9.vercel.app/api/v1/status */
                 );
@@ -33,14 +32,10 @@ const Status = () => {
                     responseBody.dependencies.database.open_connections,
                 );
             } catch (err) {
-                console.log("Error fetching data:", err);
-                console.error(err.message);
                 setError(err);
                 setIsLoading(false);
             }
         };
-
-        console.error("Database query error....:4");
 
         fetchData();
     }, []); // Empty dependency array means this runs once when the component mounts
